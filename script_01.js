@@ -55,6 +55,8 @@ function ausgabeNamenParams(firstName, famalyName) { // Parameter
 // Postulat: one function = one job (uncle Bob) 
 // SRP single responsibility principle
 
+// Ausgabe Parameter 
+
 ausgabeNamenParams2("Max","Mütze");
 
 // Parameter Anpassung SRP
