@@ -42,8 +42,8 @@ function ausgabeNamenParam(firstName) { // Parameter
 // ausgabeNamenParam("Craig");
 // ausgabeNamenParam("Fatih");
 
-ausgabeNamenParams("Maxine","Mütze")
-
+ausgabeNamenParams("Maxine","Mütze");
+ausgabeNamenParams(prompt("Vorname?"),prompt("Nachname?"),);
 
 function ausgabeNamenParams(firstName, famalyName) { // Parameter
     console.log("Hallo " + firstName + " " + famalyName + "!");
