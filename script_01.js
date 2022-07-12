@@ -48,3 +48,13 @@ ausgabeNamenParams(prompt("Vorname?"),prompt("Nachname?"),);
 function ausgabeNamenParams(firstName, famalyName) { // Parameter
     console.log("Hallo " + firstName + " " + famalyName + "!");
 }
+
+
+/***** Funktionen 03a *****/
+// 03a, Vorbereitung
+// Postulat: one function = one job (uncle Bob) 
+// SRP single responsibility principle
+
+function ausgabeNamenParams2(firstName, famalyName) { // Parameter
+    console.log("Hallo " + firstName + " " + famalyName + "!");
+}
