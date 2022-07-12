@@ -55,10 +55,11 @@ function ausgabeNamenParams(firstName, famalyName) { // Parameter
 // Postulat: one function = one job (uncle Bob) 
 // SRP single responsibility principle
 
-ausgabeNamenParams2("Max","Mütze")
+ausgabeNamenParams2("Max","Mütze");
 
+// Parameter Anpassung SRP
 
-function ausgabeNamenParams2(firstName, famalyName) { // Parameter
+function ausgabeNamenParams2(firstName, famalyName) { 
     
 // 1. Funktionalität string composing
 const gap = " ";
