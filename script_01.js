@@ -66,11 +66,28 @@ function ausgabeNamenParams2(firstName, famalyName) {
 // 1. Funktionalität string composing
 const gap = " ";
 const outputStr = "Hallo "+  gap + firstName + gap + famalyName + "!" ;
-
+}
 
 
 // 2. Funktionalität : data output
 
-    console.log(outputStr);
+    // console.log(outputStr);
+
+/***** Funktionen 03b *****/
+// Trennen der Funktionalitäten |return
+
+output(getString("Maxine","Mütze"));
+
+// 1. Funktionalität string composing
+function getString (firstName,famalyName) {
+const gap = " ";
+const outputStr = "Hallo "+  gap + firstName + gap + famalyName + "!" ;
+return outputStr
 }
 
+
+// 2. Funktionalität : data output
+// output("Hi");
+function output(OutputData) {
+console.log(OutputData);
+}
