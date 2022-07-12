@@ -36,58 +36,50 @@ function ausgabeNamenParam(firstName) { // Parameter
     console.log("Hallo " + firstName + "!");
 }
 
-/***** Funktionen 02C *****/
-// 2c.mehrere Parameter
-// ausgabeNamenParam("Anna"); // Argument 
-// ausgabeNamenParam("Craig");
-// ausgabeNamenParam("Fatih");
+/***** Funktionen 02c *****/
+// 2c. Mehrere Parameter
 
 // ausgabeNamenParams("Maxine","Mütze");
-// ausgabeNamenParams(prompt("Vorname?"),prompt("Nachname?"),);
+// ausgabeNamenParams(prompt("Vorname?"),prompt("Nachname?"));
 
-function ausgabeNamenParams(firstName, famalyName) { // Parameter
-    console.log("Hallo " + firstName + " " + famalyName + "!");
+function ausgabeNamenParams(firstName, familyName) { // Parameter
+    console.log("Hallo " + firstName + " " + familyName + "!");
 }
-
 
 /***** Funktionen 03a *****/
-// 03a, Vorbereitung
-// Postulat: one function = one job (uncle Bob) 
+// 03a. Vorbereitung
+// Postulat: one function = one job (uncle Bob)
 // SRP single responsibility principle
 
-// Ausgabe Parameter 
+// ausgabeNamenParams2("Mütze","Max");
 
-ausgabeNamenParams2("Max","Mütze");
+function ausgabeNamenParams2(firstName, familyName) { // Parameter
 
-// Parameter Anpassung SRP
+     // 1. Funktionalität: string composing
+    const gap = " ";
+    const outputStr = "Hallo"+ gap + firstName + gap + familyName + "!";
 
-function ausgabeNamenParams2(firstName, famalyName) { 
-    
-// 1. Funktionalität string composing
-const gap = " ";
-const outputStr = "Hallo "+  gap + firstName + gap + famalyName + "!" ;
+    // 2. Funktionalität: data output
+    console.log(outputStr);
+
 }
-
-
-// 2. Funktionalität : data output
-
-    // console.log(outputStr);
 
 /***** Funktionen 03b *****/
-// Trennen der Funktionalitäten |return
+// Trennen der Funktionalitäten | return
 
+
+
+ // 1. Funktionalität: string composing
 output(getString("Maxine","Mütze"));
-
-// 1. Funktionalität string composing
-function getString (firstName,famalyName) {
-const gap = " ";
-const outputStr = "Hallo "+  gap + firstName + gap + famalyName + "!" ;
-return outputStr
+function getString(firstName, familyName) {
+    const gap = " ";
+    const outputStr = "Hallo"+ gap + firstName + gap + familyName + "!";
+    return outputStr; // ---> Daten zum Call
+    console.log("hi"); // return BEENDET die Funktion!
 }
 
-
-// 2. Funktionalität : data output
-// output("Hi");
-function output(OutputData) {
-console.log(OutputData);
-}
+ // 2. Funktionalität: data output
+//  output("Hi");
+ function output(outputData) {
+    console.log(outputData);
+ }
